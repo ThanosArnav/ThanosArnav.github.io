@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arnav Rana – Backend and cloud developer</title>
+<meta name="description" content="Portfolio of Arnav Rana: backend, AI and AWS cloud projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6fa;--surface:#e6edf5;--ink:#14213d;--muted:#4a5a73;--line:#c5d1e0;--accent:#0b7285;--signal:#d9480f;--on-accent:#ffffff;
+--head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Source Serif 4",Georgia,"Times New Roman",serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a2c;--surface:#16263d;--ink:#e8eef6;--muted:#9fb0c6;--line:#2a3d58;--accent:#4cc9d9;--signal:#ff9f6b;--on-accent:#0e1a2c}}
+:root[data-theme="dark"]{--bg:#0e1a2c;--surface:#16263d;--ink:#e8eef6;--muted:#9fb0c6;--line:#2a3d58;--accent:#4cc9d9;--signal:#ff9f6b;--on-accent:#0e1a2c}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:2px}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;padding:1.25rem 0;font-family:var(--head);font-weight:500;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--ink)}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+h1{font-size:clamp(3rem,11vw,6.25rem);font-weight:800;letter-spacing:-.035em;margin:2.5rem 0 1rem}
+.lede{font-family:var(--head);font-size:clamp(1.3rem,3.4vw,1.75rem);font-weight:500;max-width:30ch;margin:0 0 1rem;line-height:1.25}
+.intro{max-width:60ch;color:var(--muted);margin:0 0 1.5rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2.5rem}
+.btn{font-family:var(--head);font-weight:700;font-size:1rem;padding:.7rem 1.2rem;border-radius:6px;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent)}
+.path{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;margin:0 0 .5rem;padding:0;list-style:none;font-family:var(--head);font-weight:700}
+.path li{display:flex;align-items:center;padding:.65rem 1rem;background:var(--surface);border:1px solid var(--line);margin:0 -1px -1px 0}
+.path li:nth-child(3){background:var(--signal);color:var(--on-accent);border-color:var(--signal)}
+.path li+li::before{content:"";width:0;height:0;margin-right:.75rem;border:.4rem solid transparent;border-left:.55rem solid var(--muted)}
+.cap{font-size:.95rem;color:var(--muted);margin:0 0 3.5rem}
+section{padding:2.5rem 0;border-top:2px solid var(--ink)}
+h2{font-size:clamp(1.7rem,4vw,2.25rem);font-weight:800;letter-spacing:-.02em;margin-bottom:1.5rem}
+.entry{display:grid;grid-template-columns:11rem 1fr;gap:.25rem 1.5rem;margin-bottom:2rem}
+.when{font-family:var(--head);font-weight:500;color:var(--muted);font-size:.95rem;padding-top:.2rem}
+h3{font-size:1.3rem;font-weight:700;margin-bottom:.2rem}
+.org{color:var(--muted);margin:0 0 .6rem}
+ul.pts{margin:.5rem 0 0;padding-left:1.15rem}ul.pts li{margin-bottom:.4rem;max-width:68ch}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.5rem 0 .25rem;padding:0;list-style:none}
+.chips li{font-family:var(--head);font-weight:500;font-size:.85rem;padding:.15rem .6rem;border:1px solid var(--line);border-radius:99px;background:var(--surface)}
+dl.skills{display:grid;grid-template-columns:11rem 1fr;gap:.9rem 1.5rem;margin:0}
+dl.skills dt{font-family:var(--head);font-weight:700}dl.skills dd{margin:0}
+.contact a{display:inline-block;margin:0 1.25rem .5rem 0;font-family:var(--head);font-weight:700}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:2px solid var(--ink)}
+@media (max-width:640px){.entry,dl.skills{grid-template-columns:1fr}.when{padding:0}dl.skills dt{margin-top:.4rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header>
+<h1>Arnav Rana</h1>
+<p class="lede">I build backend systems and cloud infrastructure on AWS.</p>
+<p class="intro">I’m a Computer Science student at Maharaja Surajmal Institute of Technology (CGPA 8.37). I work with Python, FastAPI and Node.js, and I like turning messy infrastructure into something tested, documented and repeatable.</p>
+<div class="cta"><a class="btn main" href="mailto:arnavranawork@gmail.com">Email me</a><a class="btn" href="https://github.com/ThanosArnav">See my GitHub</a></div>
+<ol class="path" aria-label="Request path in my cloud migration project"><li>Internet</li><li>Load balancer</li><li>App servers</li><li>Database</li></ol>
+<p class="cap">The path of one request through the architecture in my cloud migration project, below.</p>
+</header>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="entry"><div class="when">July – September 2026</div><div>
+<h3>Cloud Intern</h3><p class="org">Hitachi Systems India Private Limited</p>
+<ul class="pts"><li>Studied how a cloud services company moves customer servers to AWS: assessment, migration strategy (the 7 Rs), landing zones, VPC networking, EC2, RDS, S3, load balancing and monitoring.</li>
+<li>Practised the data-migration step by moving a small portion of data to AWS using EC2 and S3 concepts.</li></ul></div></div>
+<div class="entry"><div class="when">March – June 2025</div><div>
+<h3>Intern</h3><p class="org">National Informatics Centre, Delhi</p>
+<ul class="pts"><li>Helped build a service-based web platform that streamlines citizen service requests and worker allocation, working with RESTful APIs and backend integration.</li>
+<li>Worked with senior developers to understand requirements, write clean code and follow standard development practices.</li>
+<li>Contributed to documentation and sprint tasks, learning agile workflows and collaborative version control.</li></ul></div></div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="entry"><div class="when">Python, AWS</div><div>
+<h3>AWS Cloud Migration Toolkit</h3>
+<ul class="chips"><li>Python</li><li>CloudFormation</li><li>EC2</li><li>RDS</li><li>S3</li><li>VPC</li><li>IAM</li><li>GitHub Actions</li></ul>
+<ul class="pts"><li>A command-line tool that reads a server inventory, picks a migration strategy for each server (Rehost, Replatform, Refactor, Retire, Retain or Repurchase), right-sizes the AWS target from CPU and memory use, and estimates monthly cost.</li>
+<li>Plans migration waves so dependent servers move together, dependencies first and low-risk pilots earlier, and flags circular or missing dependencies.</li>
+<li>CloudFormation template for a two-zone VPC with private subnets, load balancer, Auto Scaling EC2 tier, encrypted RDS MySQL, S3 backups, least-privilege IAM and CloudWatch alarms, checked with cfn-lint.</li>
+<li>Verified S3 data migration with SHA-256 manifests, re-runnable uploads and deep integrity checks. 25 automated tests run in CI.</li></ul></div></div>
+<div class="entry"><div class="when">Python, FastAPI</div><div>
+<h3>AI Interview Question Generator</h3>
+<ul class="chips"><li>FastAPI</li><li>AWS EC2</li><li>Anthropic Claude API</li></ul>
+<ul class="pts"><li>Generates personalised technical, behavioural and system design interview questions from an uploaded resume using the Claude API.</li>
+<li>Interface for resume upload, difficulty selection and customised preparation, with structured JSON responses for rendering questions, hints and categories.</li></ul></div></div>
+<div class="entry"><div class="when">MERN stack</div><div>
+<h3>JobSphere</h3>
+<ul class="chips"><li>MongoDB</li><li>Express.js</li><li>React.js</li><li>Node.js</li></ul>
+<ul class="pts"><li>Full-stack job portal covering job posting, application tracking, resume uploads and candidate–employer interaction, with search, filtering and pagination.</li>
+<li>JWT authentication with role-based access for employers, candidates and administrators.</li></ul></div></div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<dl class="skills">
+<dt>Languages</dt><dd>C++, Python, SQL</dd>
+<dt>Frameworks</dt><dd>FastAPI, Express.js, React.js, MongoDB, boto3, pytest</dd>
+<dt>Cloud and DevOps</dt><dd>AWS (EC2, S3, RDS, VPC, IAM, ELB, Auto Scaling, CloudWatch, CloudFormation), GitHub Actions</dd>
+<dt>Tools</dt><dd>Git and GitHub, Postman, MySQL, IntelliJ, VS Code</dd>
+<dt>Fundamentals</dt><dd>Object-oriented programming, data structures and algorithms, operating systems, computer networks, cloud migration, infrastructure as code, cloud security</dd>
+</dl>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="entry"><div class="when">September 2023 – present</div><div><h3>B.Tech, Computer Science Engineering</h3><p class="org">Maharaja Surajmal Institute of Technology, Delhi. CGPA 8.37/10</p></div></div>
+<div class="entry"><div class="when">March 2022</div><div><h3>Class XII, CBSE</h3><p class="org">NC Jindal Public School. 81%</p></div></div>
+<p>Also: Web Development Bootcamp on Udemy (HTML, CSS, JavaScript, Node.js, Express, MongoDB); regular problem solving on LeetCode and GeeksforGeeks; several awards for research, public speaking and negotiation at school Model United Nations conferences.</p>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>I’m open to internships and junior backend or cloud roles. The quickest way to reach me is email.</p>
+<a href="mailto:arnavranawork@gmail.com">arnavranawork@gmail.com</a><a href="https://www.linkedin.com/in/arnav-rana-502220291/">LinkedIn</a><a href="https://github.com/ThanosArnav">GitHub</a><a href="https://leetcode.com/u/Arnav217/">LeetCode</a>
+</section>
+<footer>© 2026 Arnav Rana</footer>
+</div>
+</body>
+</html>
